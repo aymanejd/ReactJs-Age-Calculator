@@ -1,0 +1,212 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Russo One", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 380px;
+}
+
+.birth {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.birthinfo {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.parrent {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-top: 40px;
+
+}
+
+.nextbirth {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+}
+
+.nextbirth::before {
+  content: '';
+  border-left: 1px solid gray;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nextbirth .birthicon {
+  background-color: hsl(25, 97%, 53%);
+  padding: 10px 10px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 5px auto 10px;
+
+
+}
+
+.nextbirth i {
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  padding-top: 2px;
+
+}
+
+.nextbirth .nextbirthday {
+
+  font-family: 'Overpass', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.nextbirth p {
+  color: hsl(25, 97%, 53%);
+
+}
+
+.birth button {
+  background-color: hsl(25, 97%, 53%);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Overpass', sans-serif;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.birth input {
+  border: none;
+  border: 1px solid gray;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 60%;
+  color: gray;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}
+
+::selection {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.age .agepara {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.yearspan {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-family: 'math';
+}
+
+.age .yesrpara {
+  color: hsl(25, 97%, 53%);
+  font-size: 50px;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.age {
+  width: 50%;
+}
+
+.monthdays span {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summarypara {
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.summary {
+  padding-top: 10px;
+  border-top: 1px solid gray;
+
+}
+
+.yearmonthday,
+.hourweekmin {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.hourweekmin div {
+  width: calc(100%/3);
+  text-align: center;
+}
+
+.yearmonthday div {
+  width: calc(100%/3);
+  text-align: center;
+}
+
+.yearmonthday div p {
+  color: #fff;
+}
+
+.yearmonthday div .des {
+  font-size: 14px;
+}
+
+.yearmonthday div .des2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hourweekmin div p {
+  color: #fff;
+}
+
+.hourweekmin div .des {
+  font-size: 14px;
+}
+
+.hourweekmin div .des3 {
+  font-size: 16px;
+}
